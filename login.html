@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        .container {
+            margin-left: 200px;
+            background-color: lightgreen;
+            margin-right: 700px;
+        }
+
+        .container h1,a {
+            padding-left: 10px;
+        }
+
+        .container1 {
+            margin-left: 200px;
+            margin-right: 700px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        .container1 h1,label{
+            padding-left: 10px;
+        }
+
+        .container1 input {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+    <h1>New User Registration:</h1>
+    <a class="click" href="Registration.html">click here</a> <br><br>
+    </div>
+    
+    <div class="container1">
+    <h1>Login Form</h1> <br><br>
+   
+    <form id="form3" action="authentication.php" method="post">
+        <label for="username">Email:</label><br>
+        <input type="email" name="username" id="email" value="" required> <br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password" value="" required> <br><br>
+       
+        <input type="submit" id="button" name="button" value="submit">
+    </form> 
+
+    </div>
+
+</body>
+</html>

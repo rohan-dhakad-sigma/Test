@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #form2 {
+            margin-left: 200px;
+            margin-right:300px;
+            background-color: coral;
+            border-radius: 15px;
+            box-shadow: 10px 10px;
+        }
+
+        #form2 h2,label {
+            padding-left: 290px;
+            padding-top: 10px;
+        }
+
+        #form2 .input1{
+            margin-left: 250px;
+        }
+
+        #form2 .txt {
+            margin-left: 100px;
+        }
+
+        #form2 #button {
+            margin-left: 300px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .container {
+            margin-top: 50px;
+            margin-right: 300px;
+            background-color: orange;
+            height: 130px;
+            width: 15%;
+            position: sticky;
+            border-radius: 15px;
+        }
+
+        .container h2,button {
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+        .container button {
+            padding-left: 10px;
+            padding-top: 10px;
+            border-radius: 10px;
+        }
+
+        .container h2 {
+            padding-top: 20px;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>See Posts</h2>
+        <button onclick="see_post()">See Posts</button>
+    </div>
+        
+    <form id="form2" action="addPost.php" method="post">
+        <h2>Add Post</h2><br><br>
+
+        <label for="post_name"><b>Post Name:</b></label> <br>
+        <input class="input1" type="text" id="post_name" value="" name="post_name" required><br><br>
+
+        <label for="post_description"> <b>Post Description:</b></label> <br>
+        <textarea class="txt" name="post_description" id="description" cols="70" rows="20" required></textarea><br><br>
+
+        <input type="submit" id="button" name="button" value="submit"><br><br>
+
+    </form>
+
+    <script type="text/javascript">
+        function see_post() 
+        {   
+            window.location.href = `List_Post.php`;
+        }
+
+    </script>
+</body>
+</html>
