@@ -1,0 +1,16 @@
+type Query{
+    AddLogs(input: AddLogsInput!) @doc(description: "Send logs of Dusk"): AddLogsOutput @resolver(class: "Cloudways\\RestApi\\Model\\Resolver\\AddLogsResolver")
+    @doc(description: "Add Logs Data.")
+}
+
+type AddLogsInput{
+    api_endpoint: String! @doc(description: "Api Endpoint")
+    request_body: String! @doc(descrition: "Request Body")
+    response_body: String! @doc(descrition: "Response Body")
+    status_code: String! @doc(descrition: "Status Code")
+}
+
+type AddLogsOutput{
+    status_code: Int @doc(description: "Status Code")
+    success_message: String @doc(description: "Success Message")
+}
